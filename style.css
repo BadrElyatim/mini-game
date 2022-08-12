@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    font-family: 'Silkscreen', sans-serif;
+}
+
+
+
+.orange, .blue{
+    
+    height: 100%;
+    width: 50%;
+    transition: width .1s ease;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.blue{
+    background-color: blue;
+}
+
+
+/* WIN MESSAGE */
+.winner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FEFEFE;
+    padding: 10rem 7rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.winner .winnerMsg{
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+.winner .playagain{
+    width: 100%;
+    padding: 1em 0;
+    background-color: rgb(23, 139, 23);
+    border: 0;
+    cursor: pointer;
+}
+
+/* blur */
+
+.blur {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(8px); 
+    height: 100vh;
+    width: 100%;
+    display: none;
+  }
